@@ -6,13 +6,13 @@
 body {
     background-color: #ffffff;
     transition: none;
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: 'SourceCodePro', monospace;
     font-size: 1rem;
     line-height: 1.2;
 }
 
 input {
-    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-family: 'SourceCodePro', monospace;
     font-size: 1rem;
     outline: none;
     border: none;

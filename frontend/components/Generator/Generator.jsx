@@ -2,6 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import words from './wordBank';
 
+// TODO:
+// - Need a dropdown component to select the number of paragraphs
+
 /**
  * Generates an array of paragraphs to display
  *
