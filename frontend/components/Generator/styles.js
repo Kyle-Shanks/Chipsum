@@ -4,14 +4,14 @@ import { relaBlock } from 'frontend/styles/util';
 export const GutterContainer = styled.div`
     ${relaBlock}
     width: calc(100vw - 4rem);
-    max-width: 50rem;
-    margin: 2rem auto;
+    max-width: 54rem;
+    margin: 2rem auto 4rem;
 `;
 
 export const TextContainer = styled.div`
     ${relaBlock}
-    padding: 1rem;
-    border: 1px solid #aaa;
+    padding: 2rem;
+    border: 1px solid #d6d6d6;
     border-radius: 4px;
 
     & p {
@@ -29,7 +29,7 @@ export const ParagraphSelect = styled.select`
     ${relaBlock}
     margin: auto;
     padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    margin-bottom: 2rem;
+    border: 1px solid #d6d6d6;
     border-radius: 4px;
 `;

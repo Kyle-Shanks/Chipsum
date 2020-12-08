@@ -6,9 +6,8 @@ export const HeaderContainer = styled.div`
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 16rem;
-    padding: 2rem;
-    background-color: rgba(0,0,0,0.1);
+    padding: 6rem 4rem;
+    background-color: rgba(0,0,0,0.04);
     text-align: center;
 `;
 
