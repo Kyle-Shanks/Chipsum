@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import words from './wordBank';
 import { GutterContainer, TextContainer, ParagraphSelect } from './styles';
 
 // TODO:
-// - Need a dropdown component to select the number of paragraphs
+// - Make a select component that looks nicer
 
 /**
  * Generates an array of paragraphs to display
- *
  * @param {Number} numParagraphs
  * @returns {Array<String>}
  */
@@ -69,14 +67,6 @@ const Generator = ({ className }) => {
             </GutterContainer>
         </div>
     );
-};
-
-Generator.propTypes = {
-    className: PropTypes.string,
-};
-
-Generator.defaultProps = {
-    className: '',
 };
 
 export default Generator;

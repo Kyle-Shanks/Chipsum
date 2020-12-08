@@ -1,13 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
     HeaderContainer,
     HeaderText,
     HelperText,
 } from './styles';
-
-// TODO:
-// - Add styles
 
 const Header = ({ className }) => {
     const BASE_CLASS_NAME = 'Header';
@@ -20,14 +16,6 @@ const Header = ({ className }) => {
             </div>
         </HeaderContainer>
     );
-};
-
-Header.propTypes = {
-    className: PropTypes.string,
-};
-
-Header.defaultProps = {
-    className: '',
 };
 
 export default Header;
