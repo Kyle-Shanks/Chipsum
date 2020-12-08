@@ -1,18 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import {
+    HeaderContainer,
+    HeaderText,
+    HelperText,
+} from './styles';
 
 // TODO:
-// - Add content
 // - Add styles
 
 const Header = ({ className }) => {
     const BASE_CLASS_NAME = 'Header';
 
     return (
-        <div className={`${BASE_CLASS_NAME} ${className}`.trim()}>
-            This is the header
-        </div>
+        <HeaderContainer className={`${BASE_CLASS_NAME} ${className}`.trim()}>
+            <div>
+                <HeaderText>Lorem Chipsum</HeaderText>
+                <HelperText>A placeholder text generator full of bleeps and bloops</HelperText>
+            </div>
+        </HeaderContainer>
     );
 };
 

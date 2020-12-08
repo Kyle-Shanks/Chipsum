@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import words from './wordBank';
+import { GutterContainer, TextContainer, ParagraphSelect } from './styles';
 
 // TODO:
 // - Need a dropdown component to select the number of paragraphs
@@ -45,12 +46,27 @@ const generateText = (numParagraphs = 1) => {
 
 const Generator = ({ className }) => {
     const BASE_CLASS_NAME = 'Generator';
+    const [numParagraphs, setNumParagraphs] = useState(2);
 
-    const text = generateText(2)
+    const updateNumParagraphs = (e) => setNumParagraphs(e.target.value);
 
     return (
         <div className={`${BASE_CLASS_NAME} ${className}`.trim()}>
-            {text.map((paragraph, idx) => <p key={`paragraph_${idx}`}>{paragraph}</p>)}
+            <GutterContainer>
+                <ParagraphSelect value={numParagraphs} onChange={updateNumParagraphs}>
+                    {Array(15).fill().map((_, idx) => (
+                        <option key={`option_${idx}`} value={idx + 1}>
+                            {(idx + 1).toString(16)} paragraph{idx ? 's' : ''}
+                        </option>
+                    ))}
+                </ParagraphSelect>
+
+                <TextContainer className={`${BASE_CLASS_NAME}__text`}>
+                    {generateText(numParagraphs).map((paragraph, idx) => (
+                        <p key={`paragraph_${idx}`}>{paragraph}</p>
+                    ))}
+                </TextContainer>
+            </GutterContainer>
         </div>
     );
 };

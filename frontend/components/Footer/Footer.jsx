@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FooterContainer } from './styles';
 
 // TODO:
 // - Add content
@@ -9,9 +10,9 @@ const Footer = ({ className }) => {
     const BASE_CLASS_NAME = 'Footer';
 
     return (
-        <div className={`${BASE_CLASS_NAME} ${className}`.trim()}>
+        <FooterContainer className={`${BASE_CLASS_NAME} ${className}`.trim()}>
             This is the footer
-        </div>
+        </FooterContainer>
     );
 };
 

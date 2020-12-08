@@ -62,5 +62,8 @@ export default [
     'milkytracker',
     'renoise',
     'bit crush',
+    'indie scene',
+    'brooklyn warehouse',
+    'bweeew',
     // '',
 ];
