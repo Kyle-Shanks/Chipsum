@@ -65,5 +65,6 @@ export default [
     'indie scene',
     'brooklyn warehouse',
     'bweeew',
+    'chipspace',
     // '',
 ];

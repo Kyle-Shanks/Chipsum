@@ -4,16 +4,19 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #0c0c0c;
+    color: #d6d6d6;
     transition: none;
     font-family: 'SourceCodePro', monospace;
     font-size: 1rem;
     line-height: 1.2;
 }
 
-select {
-    font-family: 'SourceCodePro', monospace;
-    font-size: 1rem;
+select, button {
+    background-color: transparent;
     outline: none;
     border: none;
+    font-family: 'SourceCodePro', monospace;
+    font-size: 1rem;
+    color: #ffffff;
 }

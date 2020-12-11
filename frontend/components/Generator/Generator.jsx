@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import words from './wordBank';
-import { GutterContainer, TextContainer, ParagraphSelect } from './styles';
+import { GutterContainer, TextContainer, ParagraphSelect, CopyButton } from './styles';
 
 // TODO:
 // - Make a select component that looks nicer
@@ -45,8 +45,10 @@ const generateText = (numParagraphs = 1) => {
 const Generator = ({ className }) => {
     const BASE_CLASS_NAME = 'Generator';
     const [numParagraphs, setNumParagraphs] = useState(2);
+    const textEl = useRef();
 
     const updateNumParagraphs = (e) => setNumParagraphs(e.target.value);
+    const copyToClipboard = () => navigator.clipboard.writeText(textEl.current.innerText);
 
     return (
         <div className={`${BASE_CLASS_NAME} ${className}`.trim()}>
@@ -59,11 +61,13 @@ const Generator = ({ className }) => {
                     ))}
                 </ParagraphSelect>
 
-                <TextContainer className={`${BASE_CLASS_NAME}__text`}>
+                <TextContainer ref={textEl} className={`${BASE_CLASS_NAME}__text`}>
                     {generateText(numParagraphs).map((paragraph, idx) => (
                         <p key={`paragraph_${idx}`}>{paragraph}</p>
                     ))}
                 </TextContainer>
+
+                <CopyButton onClick={copyToClipboard}>copy to clipboard</CopyButton>
             </GutterContainer>
         </div>
     );

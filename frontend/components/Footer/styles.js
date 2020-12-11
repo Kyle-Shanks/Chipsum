@@ -5,5 +5,5 @@ export const FooterContainer = styled.div`
     ${relaBlock}
     padding: 2rem 4rem;
     text-align: center;
-    border-top: 1px solid #d6d6d6;
+    border-top: 1px solid #333333;
 `;
