@@ -6,7 +6,7 @@ const Footer = ({ className }) => {
 
     return (
         <FooterContainer className={`${BASE_CLASS_NAME} ${className}`.trim()}>
-            This is the footer
+            Made by KJ Shanks. View code on <a href="https://github.com/Kyle-Shanks/Chipsum">GitHub</a>.
         </FooterContainer>
     );
 };

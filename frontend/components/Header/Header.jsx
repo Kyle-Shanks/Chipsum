@@ -1,10 +1,5 @@
 import React from 'react';
-import {
-    HeaderContainer,
-    HeaderText,
-    HelperText,
-    HeaderSvg,
-} from './styles';
+import { HeaderContainer, HeaderText, HelperText, HeaderSvg } from './styles';
 
 const Header = ({ className }) => {
     const BASE_CLASS_NAME = 'Header';
@@ -21,7 +16,7 @@ const Header = ({ className }) => {
                 </HeaderSvg>
 
                 <HeaderText>Lorem Chipsum</HeaderText>
-                <HelperText>A placeholder text generator full of bleeps and bloops</HelperText>
+                <HelperText>A placeholder text generator composed of bleeps and bloops</HelperText>
             </div>
         </HeaderContainer>
     );

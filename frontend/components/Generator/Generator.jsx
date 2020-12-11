@@ -2,9 +2,6 @@ import React, { useState, useRef } from 'react';
 import words from './wordBank';
 import { GutterContainer, TextContainer, ParagraphSelect, CopyButton } from './styles';
 
-// TODO:
-// - Make a select component that looks nicer
-
 /**
  * Generates an array of paragraphs to display
  * @param {Number} numParagraphs
